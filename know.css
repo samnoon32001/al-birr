@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.589) 50%, rgba(0, 0, 0, 0.589) 50%),
+    url(pics/AL\ BIRR.jpg) no-repeat center center ;
+    background-size: cover;
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 90vh;
+    /* padding: 30px; */
+}
+
+.main .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.container .box{
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.726);
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: slideUp 2s ease-out forwards;
+    transition: 2s;
+}
+
+
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.container .box h3{
+    color: #fff;
+    text-align: center;
+    background: rgb(99, 79, 14);
+    padding: 10px;
+    font-size: 14px;
+}
+.container .box img{
+    width:200px ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.container .box p{
+    background: #fff;
+    color: rgba(0, 0, 0, 0.849);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
